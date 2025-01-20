@@ -1,0 +1,51 @@
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe
+$ git init git_challenge
+Initialized empty Git repository in C:/Users/Hakalon/Documents/Workspace/Zoe/git_challenge/.git/
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe
+$ cd git_challenge/
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ echo hello, world! >> hello_world.txt
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ git add hello_world.txt 
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ git commit -m "hello_world.txtを追加"
+[master (root-commit) b874856] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+ Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ echo こんにちは、世界！>> hello_world.txt 
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ git add hello_world.txt 
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ git commit -m　"日本語訳を追記"
+[master 28b1b87] 　日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
+$ git log
+commit 28b1b8717039a95eac16d69601e2a01dd5bf35b7 (HEAD -> master)
+Author: isyuueki <isyuueki@gmail.com>
+Date:   Mon Jan 20 21:20:09 2025 +0900
+
+    　日本語訳を追記
+
+commit b874856bf7ffa9498c5f73a4b0999d10641956cc
+Author: isyuueki <isyuueki@gmail.com>
+Date:   Mon Jan 20 21:15:02 2025 +0900
+
+    hello_world.txtを追加
+
