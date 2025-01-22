@@ -36,16 +36,7 @@ On branch master
 nothing to commit, working tree clean
 
 Hakalon@LAPTOP-OCI38SHT MINGW64 ~/Documents/Workspace/Zoe/git_challenge (master)
-$ git log
-commit 28b1b8717039a95eac16d69601e2a01dd5bf35b7 (HEAD -> master)
-Author: isyuueki <isyuueki@gmail.com>
-Date:   Mon Jan 20 21:20:09 2025 +0900
-
-    　日本語訳を追記
-
-commit b874856bf7ffa9498c5f73a4b0999d10641956cc
-Author: isyuueki <isyuueki@gmail.com>
-Date:   Mon Jan 20 21:15:02 2025 +0900
-
-    hello_world.txtを追加
+$ git log --oneline
+28b1b87 (origin/master, origin/main, main) 　日本語訳を追記
+b874856 hello_world.txtを追加
 
